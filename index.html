@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour L'Amour des Quartiers</title>
+    <style>
+        /* [Previous styles remain the same until header] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* [Rest of the previous styles remain the same] */
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #ecf0f1;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .vision, .objectif, .bureau {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .vision {
+            background-color: #fff;
+        }
+
+        .objectif {
+            background-color: #f7f9fa;
+        }
+
+        .membres {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .membre {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Remplacez le texte par votre logo -->
+            <img src="img/logo.jpeg" alt="Logo Association">
+        </div>
+        <h1>Pour L'Amour des Quartiers</h1>
+    </header>
+
+    <!-- [Rest of the HTML remains the same] -->
+    <nav>
+        <ul>
+            <li><a href="#vision">Notre Vision</a></li>
+            <li><a href="#objectif">Nos Objectifs</a></li>
+            <li><a href="#bureau">Le Bureau</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Ensemble, changeons les choses</h2>
+        <p>Une association engagée pour un monde meilleur</p>
+    </section>
+
+    <section id="vision" class="vision">
+        <h2>Notre Vision</h2>
+        <p>Améliorer le quotidien des habitants des quartiers par nos actions, notre présence et notre dévotion pour tous.
+            D'ici 10 ans maximum, qu'on soit présent non seulement dans toutes le svilles de France, mais qu'on ai pu impacter la vie des habitants dans leur quartiers.
+        </p>
+    </section>
+
+    <section id="objectif" class="objectif">
+        <h2>Le Statuts de l'association</h2>
+        <p>Cette association a pour objet de favoriser l'engagement des jeunes de 12 à 25 ans des quartiers
+            prioritaires (QPV) et des autres quartiers de la politique de la ville par des actions sportives,
+            culturelles, sociales, artistiques et de sensibilisation à la citoyenneté. Elle vise également à donner la
+            parole aux habitants des quartiers (parents, adultes de plus de 26 ans, séniors, personnes en
+            situation de handicap) pour créer un lien intergénérationnel.
+            Les activités envisagées pour atteindre cet objectif (sans limitation) sont notamment :
+            - Organisation d'événements sportifs
+            - Ateliers culturels et artistiques
+            - Séances de sensibilisation à la citoyenneté
+            - Activités intergénérationnelles
+            - Programmes d'insertion sociale
+            Tous les autres moyens susceptibles de concourir à la réalisation de son objet social.
+            L’association a une activité économique.
+            </p>
+    </section>
+
+    <section id="bureau" class="bureau">
+        <h2>Les Membres du Bureau</h2>
+        <div class="membres">
+            <div class="membre">
+                <h3>Président</h3>
+                <p>Mehdi RAMDANI</p>
+            </div>
+
+                <div class="membre">
+                    <h3>Vice-Président</h3>
+                    <p>Rodrigue GLASSIOGNON</p>
+                </div>
+
+            <div class="membre">
+                <h3>Secrétaire</h3>
+                <p>Aida AKA</p>
+            </div>
+
+            <div class="membre">
+                <h3>Trésorier</h3>
+                <p>Sylvie REAZEL</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024  Pour L'Amour des Quartiers (P.A.K) - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
