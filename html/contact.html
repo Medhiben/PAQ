@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
+<html><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pour L'Amour des Quartiers</title>
+    <title>Contact</title>
+
     <style>
+        :root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #ecf0f1;
+    --card-background: #fff;
+}
         /* [Previous styles remain the same until header] */
         * {
             margin: 0;
@@ -59,6 +65,20 @@
             color: white;
             text-decoration: none;
         }
+        main {
+    max-width: 800px;
+    margin: 100px auto 2rem;
+    padding: 2rem;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 9rem;
+
+}
+h1 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
 
         .hero {
             background-color: #ecf0f1;
@@ -153,86 +173,72 @@
             }
         }
     </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <!-- Remplacez le texte par votre logo -->
-            <img src="img/logo.jpeg" alt="Logo Association">
-        </div>
-        <h1>Pour L'Amour des Quartiers</h1>
-    </header>
 
-    <!-- [Rest of the HTML remains the same] -->
-    <nav>
-        <ul>
-            <li><a href="#vision">Notre Vision</a></li>
-            <li><a href="#objectif">Nos Objectifs</a></li>
-            <li><a href="#bureau">Le Bureau</a></li>
-            <li><a href="html/contact.html">Contact</a></li>
-
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <h2>Ensemble, changeons les choses</h2>
-        <p>Une association engagée pour un monde meilleur</p>
-    </section>
-
-    <section id="vision" class="vision">
-        <h2>Notre Vision</h2>
-        <p>Améliorer le quotidien des habitants des quartiers par nos actions, notre présence et notre dévotion pour tous.
-            D'ici 10 ans maximum, que nous soyons présent non seulement dans toutes les villes de France, mais qu'on ai pu impacter la vie des habitants de tous les quartiers.
-        </p>
-    </section>
-
-    <section id="objectif" class="objectif">
-        <h2>Le Statuts de l'association</h2>
-        <p>Cette association a pour objet de favoriser l'engagement des jeunes de 12 à 25 ans des quartiers
-            prioritaires (QPV) et des autres quartiers de la politique de la ville par des actions sportives,
-            culturelles, sociales, artistiques et de sensibilisation à la citoyenneté. Elle vise également à donner la
-            parole aux habitants des quartiers (parents, adultes de plus de 26 ans, séniors, personnes en
-            situation de handicap) pour créer un lien intergénérationnel.
-            Les activités envisagées pour atteindre cet objectif (sans limitation) sont notamment :
-            - Organisation d'événements sportifs
-            - Ateliers culturels et artistiques
-            - Séances de sensibilisation à la citoyenneté
-            - Activités intergénérationnelles
-            - Programmes d'insertion sociale
-            Tous les autres moyens susceptibles de concourir à la réalisation de son objet social.
-            L’association a une activité économique.
-            </p>
-    </section>
-
-    <section id="bureau" class="bureau">
-        <h2>Les Membres du Bureau</h2>
-        <div class="membres">
-            <div class="membre">
-                <h3>Président</h3>
-                <p>Mehdi RAMDANI</p>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- Remplacez le texte par votre logo -->
+                <img src="../img/logo.jpeg" alt="Logo Association">
             </div>
-
-                <div class="membre">
-                    <h3>Vice-Président</h3>
-                    <p>Rodrigue GLASSIOGNON</p>
-                </div>
-
-            <div class="membre">
-                <h3>Secrétaire</h3>
-                <p>Aida AKA</p>
-            </div>
-
-            <div class="membre">
-                <h3>Trésorier</h3>
-                <p>Sylvie REAZEL</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024  Pour L'Amour des Quartiers (P.A.Q) - Tous droits réservés</p>
-    </footer>
-
-
-</body>
-</html>
+            <h1>Pour L'Amour des Quartiers</h1>
+        </header>
+    
+        <!-- [Rest of the HTML remains the same] -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Notre Vision</a></li>
+                <li><a href="../index.html">Nos Objectifs</a></li>
+                <li><a href="../index.html">Le Bureau</a></li>
+                <li><a href="contact.html ">Contact</a></li>
+    
+            </ul>
+        </nav>
+    
+        <main>
+            <h1>Contactez-nous</h1>
+            <section class="contact-info">
+                <p><strong>Email:</strong> </p>contact@paq-asso.com
+            </section>
+            <section class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <form>
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="subject">Sujet:</label>
+                    <input type="text" id="subject" name="subject" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    <button onclick="sendMail()">Envoyer</button>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2025 Pour L'Amour des Quartiers(P.A.Q). Tous droits réservés.</p>
+        </footer>
+    
+        <script>
+            function sendMail(){ 
+            // Récupérer les valeurs des champs du formulaire
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+    
+        // Construire le lien mailto
+        var subject = encodeURIComponent("Message de " + name);
+        var body = encodeURIComponent("Nom: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+    
+        // Rediriger vers le lien mailto
+        window.location.href = "mailto:contact@paq-asso.com?subject=" + subject + "&body=" + body;
+    }
+        </script>
+    
+       
+    </body></html>
